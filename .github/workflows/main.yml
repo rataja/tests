@@ -15,4 +15,4 @@ jobs:
           username: w165463 #w25337
           password: ${{ secrets.ftp_password }}
           server-dir: /www/subdom/tests/
-          dry-run: true
+          #dry-run: true

@@ -5,14 +5,14 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: 25337.w37.wedos.net
-        username: w25337
-        password: test #${{ secrets.ftp_password }}
-        server-dir: /www/subdom/tests/
-        dry-run: true
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: 165463.w63.wedos.net
+          username: w165463 #w25337
+          password: ${{ secrets.ftp_password }}
+          server-dir: /www/subdom/tests/
+          dry-run: true
